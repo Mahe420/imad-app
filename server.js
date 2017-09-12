@@ -15,7 +15,7 @@ app.get('/ui/demo2.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'demo2.html'));
 });
 
-app.get('/', function (req, res) {
+app.get('/ui/index.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 

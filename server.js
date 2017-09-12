@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 
 
-app.get('/', function (req, res) {
+app.get('/ui/demo.jsp', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'demo.jsp'));
 });
 

@@ -1,9 +1,10 @@
 <html>
 <body>
    <script>
-       document.write("welcome");
-       var text1=document.getParameter("name").value;
-       document.write(text);
-   </script>
+      var query = window.location.search.substring(1);
+    var Field=query.split("=");
+    var demo = Field[1];
+    document.write(demo);
+    </script>
 </body>
 </html>

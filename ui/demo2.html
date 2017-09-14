@@ -15,11 +15,21 @@ return params;
 params = getParams();
 firstname = unescape(params["1"]);
       if (firstname == "abie")
-     { document.write(firstname);
-     document.getElementById("imgs").src="abie.jpg";
+     { 
+          var x = document.createElement("/abie.jpg");
+    x.setAttribute("src", "img_pulpit.jpg");
+    x.setAttribute("width", "304");
+    x.setAttribute("height", "228");
+     document.body.appendChild(x);
      }
   else
-  document.getElementById("imgs").src="roshan.jpeg";
+ {
+      var x = document.createElement("/roshan.jpeg");
+    x.setAttribute("src", "img_pulpit.jpg");
+    x.setAttribute("width", "304");
+    x.setAttribute("height", "228");
+     document.body.appendChild(x);
+ }
 
   
 </script></head>

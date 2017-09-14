@@ -1,5 +1,13 @@
 <html>
 <body bgcolor="GREEN">
+    <script>
+        function testJS() {
+    var b = document.getElementById('name').value,
+        url = 'http://path_to_your_html_files/next.html?name=' + encodeURIComponent(b);
+
+    document.location.href = url;
+}
+    </script>
 <form action=ui/image.html>
 Abie:<input type="radio" value="1" id="type">
 Roshan:<input type="radio" value="2" id="type">

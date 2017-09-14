@@ -3,7 +3,7 @@
     <script>
         function testJS() {
     var b = document.getElementById('name').value,
-        url = 'http://path_to_your_html_files/next.html?name=' + encodeURIComponent(b);
+        url = 'http://mahendrand4897.imad.hasura-app.io/ui/image.html?type=' + encodeURIComponent(b);
 
     document.location.href = url;
 }
@@ -11,7 +11,7 @@
 <form action=ui/image.html type=get>
 Abie:<input type="radio" value="1" id="type">
 Roshan:<input type="radio" value="2" id="type">
-<input type="submit" value="submit">
+<input type="submit" value="submit"  onClick="testJS()">
 </form>
 </body>
 </html>

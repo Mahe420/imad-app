@@ -14,19 +14,19 @@ return params;
 }
 params = getParams();
 firstname = unescape(params["1"]);
-document.write(firstname);
       if (firstname == "abie")
      { document.write(firstname);
+     document.getElementById("imgs").src="abie.jpg";
      }
   else
-  document.getElementById("img").src="roshan.jpeg";
+  document.getElementById("imgs").src="roshan.jpeg";
 
   
 </script></head>
 <body>
     <center>
         
-    <img src="" id="img"/></center><br>
+    <img src="" id="imgs"/></center><br>
     
 </body>
 </html>

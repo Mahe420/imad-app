@@ -16,13 +16,24 @@ params = getParams();
 firstname = unescape(params["1"]);
       if (firstname == "abie")
      { 
-      
-         </script><img src="ui/abie.jpg"/>      <script>     }
+        var img = document.createElement("img");
+    img.src = "/abie.jpg";
+    img.width = 500;
+    img.height = 1000;
+    img.alt = alt;
+
+    // This next line will just add it to the <body> tag
+    document.body.appendChild(img);
   else
- {</script>
- 
- <img src="/roshan.jpeg" />
- <script> 
+ {
+ var img = document.createElement("img");
+    img.src = "ui/roshan.jpeg";
+    img.width = 500;
+    img.height = 1000;
+    img.alt = alt;
+
+    // This next line will just add it to the <body> tag
+    document.body.appendChild(img);
        }
   </script>
 

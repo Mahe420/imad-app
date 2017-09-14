@@ -24,11 +24,11 @@ app.get('/ui/mydemo.java', function (req, res) {
 });
 
 app.get('/ui/image.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'mydemo.java'));
+  res.sendFile(path.join(__dirname, 'ui', 'image.html'));
 });
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'mydemo.java'));
+  res.sendFile(path.join(__dirname, 'ui', '2exp.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {

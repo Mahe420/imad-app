@@ -14,11 +14,18 @@ return params;
 }
 params = getParams();
 firstname = unescape(params["1"]);
-  document.write("<center><h1> FUCK U " + firstname + "<h1></center><br>");
+  window.onload = function (){
+      if (firstname=="1")
+      document.getElementById(img).src="IMG-20160630-WA0004.jpg";
+  }
+  else{
+      document.getElementById(img).src="WhatsApp Image 2017-09-14 at 4.10.17 PM.jpeg";
+  }
+  
 </script></head>
 <body>
     <center>
-    <img src="middle.jpg"/></center><br>
+    <img src="" name="img"/></center><br>
     <p>Shut the fuck up</p>
 </body>
 </html>

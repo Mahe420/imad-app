@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 
 
-app.get('/', function (req, res) {
+app.get('/ui/demo.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'demo.html'));
 });
 
@@ -20,6 +20,14 @@ app.get('/ui/index.html', function (req, res) {
 });
 
 app.get('/ui/mydemo.java', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'mydemo.java'));
+});
+
+app.get('/ui/image.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'mydemo.java'));
+});
+
+app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'mydemo.java'));
 });
 

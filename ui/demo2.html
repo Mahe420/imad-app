@@ -16,14 +16,10 @@ params = getParams();
 firstname = unescape(params["1"]);
       if (firstname == "abie")
      { 
-        var img = document.createElement("img");
-    img.src = "ui/abie.jpg";
-    img.width = 500;
-    img.height = 1000;
-    img.alt = 'abie';
+        image01= new Image();
+        image01.src="ui/abie.jpg"
+document.images[0]
 
-    // This next line will just add it to the <body> tag
-    document.body.appendChild(img);
   else
  {
  var img = document.createElement("img");

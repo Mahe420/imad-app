@@ -1,4 +1,4 @@
-<html><body>
+<html><body onload="a()">
 <script LANGUAGE="javascript">
 function getParams(){
 var idx = document.URL.indexOf('?');
@@ -12,29 +12,23 @@ params[nameVal[0]] = nameVal[1];
 }
 return params;
 }
+function a(){
 params = getParams();
 firstname = unescape(params["1"]);
       if (firstname == "abie")
      { 
-        image01= new Image();
-        image01.src="ui/abie.jpg"
-document.image01;
-
+document.write("abie");
+   document.getElementById("img").src="abie.jpg";
+}
   else
  {
- var img = document.createElement("img");
-    img.src = "ui/roshan.jpeg";
-    img.width = 500;
-    img.height = 1000;
-    img.alt = 'roshan';
-
-    // This next line will just add it to the <body> tag
-    document.body.appendChild(img);
-       }
+document.write("roshan");
+ document.getElementById("img").src="roshan.jpeg";
+       }}
   </script>
 
     <center>
-        
+        <img src="" id="img"/>
     </center>
     
 </body>

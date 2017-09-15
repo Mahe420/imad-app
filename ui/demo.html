@@ -1,13 +1,21 @@
 <html>
   <body>
+      <script>
+          function check(){
+              if(document.getElementById('type').value == "abie"){
+                  window.alert("hello");
+                  
+              }
+          }
+      </script>
     <center> <h1>Please select any name Sir/Madam</h1>
-<form type=get action="abie.html">
+<form type=get action="abie.html" id="f1">
 
 Abie:<input type="radio" value="abie" id="type" name="1">
 Roshan:<input type="radio" value="roshan" id="type" name="1">
 <br>
 <br>
-<input type=submit value="Submit">
+<input type=submit value="Submit" onclick="check()">
 
 </form>
       </center>

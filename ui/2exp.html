@@ -1,17 +1,32 @@
 <html>
-<body bgcolor="GREEN">
-    <script>
-        function testJS() {
-    var b = document.getElementById('name').value,
-        url = 'http://mahendrand4897.imad.hasura-app.io/ui/image.html?type=' + encodeURIComponent(b);
+  <body>
+      <script type = "text/javascript">
+        function pic1()
+        {
+            document.getElementById("img").src = "abie.jpg";
+        }
 
-    document.location.href = url;
-}
-    </script>
-<form action=ui/image.html type=get>
-Abie:<input type="radio" value="1" id="type">
-Roshan:<input type="radio" value="2" id="type">
-<input type="submit" value="submit"  >
-</form>
-</body>
+        function pic2()
+        {
+            document.getElementById("img").src = "roshan.jpeg";
+        }
+
+        
+         </script>
+
+<h1>Please select ur choose name Sir/Madam</h1>
+
+<br>
+
+  <center>  <img src = "" id = "img"/> 
+<br>
+
+
+<input type="button" value="Abiesheik" onclick="pic1()"/>
+<input type="button" value="Roshan" onclick="pic2()"/>
+
+
+
+      </center>
+  </body>
 </html>

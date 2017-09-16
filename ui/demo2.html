@@ -1,5 +1,5 @@
-<html><body >
-<script LANGUAGE="javascript">
+<html><body onload="a()">
+<script LANGUA GE="javascript">
 function getParams(){
 var idx = document.URL.indexOf('?');
 var params = new Array();
@@ -19,6 +19,7 @@ firstname = unescape(params["1"]);
      { 
 document.write("abie");
    document.getElementById("img").src="/ui/abie.jpg";
+     document.getElementById("img").src = "/ui/abie.jpg";
 }
   else
  {
@@ -28,7 +29,7 @@ document.write("roshan");
   </script>
 
     <center>
-        <img src="" id="img" onload="a()"/>
+        <img src="" id="img" />
 
     </center>
     
